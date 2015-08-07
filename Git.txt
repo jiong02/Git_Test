@@ -1,0 +1,122 @@
+内容解释符
+【
+/*注释*/
+(属性)
+[系统的显示内容]
+
+
+
+
+
+】
+
+Git 安装流程 http://www.jb51.net/article/55438.htm
+
+安装完GIT For Window (msysgit)
+
+创建本地SSH
+ssh-keygen -t rsa -C "13241153187@163.com" //你的邮箱
+
+将ssh配置到GitHub中
+
+配置本地用户和邮箱
+git config --global user.name "" 	       //设置用户名
+git config --global user.email "" 	       //设置邮箱
+ 
+创建版本库
+mkdir test 	                               //创建test目录
+cd test 	                               //选择test目录
+pwd 		                               //可以设置密码
+git init 	                               //这个目录变成Git可以管理的仓库
+ls -ah		                               //显示.Git目录
+
+添加文件【
+1. 手动添加文件到本地仓库
+2. git add readme.txt 		               //告诉Git添加了txt文件
+3. git commit -m "注释"		               //commit是提交的意思 -m是添加注释的属性
+】
+
+Git命令行【
+Git status 	                               //要随时掌握工作仓库的状态
+Git diff 	                               //可以查看仓库修改内容。
+Git log                                    //查看仓库修改的历史记录 /*最近到最远*/
+Git log --pretty=oneline                   //查看仓库修改的历史记录 (--pretty=oneline / 内容一行显示)
+/* 1.[3628164fb26d48395383f8f31179f24e0882e1e0] 2.[append GPL] */
+/* 1 = 提交注释的版本号  2 = 文件修改的内容  */
+
+Git reset --hard HEAD^                     //仓库文件倒回到上一次修改版本
+                                           /* 一个 ^ 代表上个版本 多个 ^ 代表多个版本 */
+
+Git reset --hard 版本号                    //仓库文件倒回到指定的修改版本
+                                           /* Git log 可查看版本号 */ 
+
+                                           /* 这里的倒回是会清除部分历史纪录的 */
+
+Git reflog                                 //显示仓库所有的历史纪录
+                                           /* 即使关机重启后仍能查看历史记录 */
+
+
+
+】
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
